@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Detail"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/devider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/detailsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devider"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/current_quarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noon" />
+
+            <LinearLayout
+                android:id="@+id/center_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/second_quarter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eve"
+                    android:layout_marginRight="64dp"/>
+
+                <TextView
+                    android:id="@+id/third_quarter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Night" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forth_quarter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Morn" />
+
+
+            <TextView
+                android:id="@+id/current_quarter_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_quarter"
+                android:text="Noon" />
+
+            <LinearLayout
+                android:id="@+id/center_content_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/second_quarter_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eve"
+                    android:layout_marginRight="64dp"/>
+
+                <TextView
+                    android:id="@+id/third_quarter_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Night" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forth_quarter_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forth_quarter"
+                android:layout_alignParentRight="true"
+                android:text="Morn" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_more_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsView"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="8dp"
+            android:text="MORE"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

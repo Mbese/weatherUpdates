@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_cloud_queue_black_24dp"
+        android:layout_marginRight="32dp"/>
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:text="Monday"
+        android:layout_marginRight="32dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hour"
+        android:layout_toRightOf="@+id/icon"
+        android:text="24 Sep"
+        android:layout_marginRight="32dp"/>
+
+    <TextView
+        android:id="@+id/weather_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light rain"
+        android:layout_toRightOf="@+id/hour"
+        android:layout_marginRight="32dp"/>
+
+    <TextView
+        android:id="@+id/weather_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/date"
+        android:layout_below="@+id/weather_desc"
+        android:text="N 11 KM/H"
+        android:layout_marginRight="32dp"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/weather_desc"
+        android:text="20"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

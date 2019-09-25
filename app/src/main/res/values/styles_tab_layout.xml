@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EMG.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/secondary_color</item>
+        <item name="tabIndicatorHeight">@dimen/tab_indicator_height</item>
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/EMG.TabLayout.TabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="EMG.TabLayout.TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/medium_font</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <dimen name="tab_indicator_height">3dp</dimen>
+    <dimen name="medium_font">14sp</dimen>
+</resources>
